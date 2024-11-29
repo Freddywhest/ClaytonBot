@@ -23,7 +23,7 @@ const main = async () => {
 (async () => {
   try {
     const latestVersion = await axios.get(
-      "https://raw.githubusercontent.com/Freddywhest/Clayton/refs/heads/main/package.json"
+      "https://raw.githubusercontent.com/Freddywhest/ClaytonBot/refs/heads/main/package.json"
     );
     if (!_.isEqual(latestVersion.data.version, version)) {
       logger.versionWarning(
